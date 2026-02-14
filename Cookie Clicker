@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Clicker Lite</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="left-panel">
+        <h1>🍪 Cookie Clicker Lite</h1>
+        <p class="score" aria-live="polite">
+          Cookies: <span id="cookie-count">0</span>
+        </p>
+        <p class="cps" aria-live="polite">
+          Cookies/sec: <span id="cps">0</span>
+        </p>
+
+        <button id="cookie-button" class="cookie-button" aria-label="Bake cookies">
+          🍪
+        </button>
+
+        <div class="sound-controls">
+          <button id="mute-toggle">🔊 Mute</button>
+        </div>
+      </section>
+
+      <section class="right-panel">
+        <h2>Upgrades</h2>
+        <div class="upgrade-list">
+          <button id="buy-cursor" class="upgrade-btn">
+            Buy Cursor (+1/sec) — Cost: <span id="cursor-cost">15</span>
+            <small>Owned: <span id="cursor-owned">0</span></small>
+          </button>
+          <button id="buy-factory" class="upgrade-btn">
+            Buy Factory (+10/sec) — Cost: <span id="factory-cost">100</span>
+            <small>Owned: <span id="factory-owned">0</span></small>
+          </button>
+          <button id="buy-oven" class="upgrade-btn">
+            Buy Mega Oven (+50/sec) — Cost: <span id="oven-cost">500</span>
+            <small>Owned: <span id="oven-owned">0</span></small>
+          </button>
+        </div>
+
+        <h2>How to Play</h2>
+        <details open>
+          <summary>Quick Guide</summary>
+          <ul>
+            <li>Click the cookie to earn cookies.</li>
+            <li>Spend cookies on upgrades to boost cookies per second.</li>
+            <li>Autoclickers (Cursor, Factory, Mega Oven) generate cookies automatically.</li>
+            <li>Use the mute button to toggle click sound on/off.</li>
+            <li>Try to reach 10,000 cookies for a personal milestone!</li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
